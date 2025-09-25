@@ -1,10 +1,10 @@
-import { ButtonHTMLAttributes } from "react";
+import { HTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 import { SocialLinkEnum } from "./types";
 import { getIconBySocialLink } from "./utils/get-icon-by-social-link";
 import Link from "next/link";
 
-interface SocialLinkProps extends ButtonHTMLAttributes<{}> {
+interface SocialLinkProps extends HTMLAttributes<HTMLButtonElement> {
   socialLink: SocialLinkEnum;
   link: string;
 }
