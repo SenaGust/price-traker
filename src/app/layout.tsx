@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Inter_Tight } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
+import { NextIntlClientProvider } from "next-intl";
 
 const geistSans = Inter({
   variable: "--font-geist-sans",
@@ -33,7 +34,7 @@ export default function RootLayout({
           "dark:bg-[url(/dark-bg-mobile.png)] dark:lg:bg-[url(/dark-bg-desktop.png)]"
         )}
       >
-        {children}
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
   );

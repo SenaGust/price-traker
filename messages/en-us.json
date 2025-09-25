@@ -1,0 +1,11 @@
+{
+  "homePage": {
+    "subscribe": "Subscribe to NLW",
+    "downloadEbook": "Download my e-book",
+    "portfolio": "View my portfolio",
+    "course": "View my course"
+  },
+  "footer": {
+    "madeWithLove": "Made with ♥ by <link>Rocketseat</link>"
+  }
+}

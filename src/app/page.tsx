@@ -2,10 +2,13 @@ import { Avatar } from "@/components/common/avatar";
 import { Button } from "@/components/common/button";
 import { SocialLink, SocialLinkEnum } from "@/components/common/social-link";
 import { Switch } from "@/components/common/switch";
+import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 
 export default async function Home() {
+  const t = await getTranslations();
+
   return (
     <div
       className={twMerge(
@@ -22,10 +25,10 @@ export default async function Home() {
       </section>
 
       <section className="flex p-6 flex-col gap-4 w-full">
-        <Button>Inscreva-se no NLW</Button>
-        <Button>Baixe meu e-book</Button>
-        <Button>Veja meu portfólio</Button>
-        <Button>Conheça meu curso</Button>
+        <Button>{t("homePage.subscribe")}</Button>
+        <Button>{t("homePage.downloadEbook")}</Button>
+        <Button>{t("homePage.portfolio")}</Button>
+        <Button>{t("homePage.course")}</Button>
       </section>
 
       <section className="flex p-6 gap-4 flex-row items-center">
@@ -48,14 +51,17 @@ export default async function Home() {
       </section>
 
       <footer className="text-sm text-primary p-6">
-        Feito com ♥ pela{" "}
-        <Link
-          href="https://rocketseat.com.br"
-          target="_blank"
-          className="hover:underline"
-        >
-          Rocketseat
-        </Link>
+        {t.rich("footer.madeWithLove", {
+          link: (chunks) => (
+            <Link
+              href="https://rocketseat.com.br"
+              target="_blank"
+              className="hover:underline"
+            >
+              {chunks}
+            </Link>
+          ),
+        })}
       </footer>
     </div>
   );
