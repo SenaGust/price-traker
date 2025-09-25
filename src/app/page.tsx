@@ -2,6 +2,7 @@ import { Avatar } from "@/components/common/avatar";
 import { Button } from "@/components/common/button";
 import { SocialLink, SocialLinkEnum } from "@/components/common/social-link";
 import { Switch } from "@/components/common/switch";
+import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 
 export default async function Home() {
@@ -26,14 +27,33 @@ export default async function Home() {
       </section>
 
       <section className="flex p-6 gap-4 flex-row items-center">
-        <SocialLink socialLink={SocialLinkEnum.GitHub} />
-        <SocialLink socialLink={SocialLinkEnum.Instagram} />
-        <SocialLink socialLink={SocialLinkEnum.Youtube} />
-        <SocialLink socialLink={SocialLinkEnum.LinkedIn} />
+        <SocialLink
+          socialLink={SocialLinkEnum.GitHub}
+          link="https://github.com/rocketseat-education"
+        />
+        <SocialLink
+          socialLink={SocialLinkEnum.Instagram}
+          link="https://www.instagram.com/rocketseat"
+        />
+        <SocialLink
+          socialLink={SocialLinkEnum.Youtube}
+          link="https://www.youtube.com/rocketseat"
+        />
+        <SocialLink
+          socialLink={SocialLinkEnum.LinkedIn}
+          link="https://br.linkedin.com/school/rocketseat"
+        />
       </section>
 
       <footer className="text-sm text-primary p-6">
-        Feito com ♥ pela Rocketseat
+        Feito com ♥ pela{" "}
+        <Link
+          href="https://rocketseat.com.br"
+          target="_blank"
+          className="hover:underline"
+        >
+          Rocketseat
+        </Link>
       </footer>
     </div>
   );
