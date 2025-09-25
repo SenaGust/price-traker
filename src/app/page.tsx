@@ -1,3 +1,4 @@
+import { Button } from "@/components/common/button";
 import {
   MoonIcon,
   SunIcon,
@@ -9,14 +10,7 @@ import Image from "next/image";
 export default async function Home() {
   return (
     <div>
-      <MoonIcon />
-      <SunIcon />
-      <AmazonLogoIcon />
-      <Image src={logoAmazon} alt="" width={32} height={32} />
-
-      <span className="text-sm text-primary">text-sm</span>
-      <br />
-      <span className="text-md text-primary">text-md</span>
+      <Button>Link</Button>
     </div>
   );
 }

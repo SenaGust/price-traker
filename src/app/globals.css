@@ -1,26 +1,28 @@
 @import "tailwindcss";
 
 :root {
+  --color-base: 0, 0, 0;
   --color-primary: #000;
 
-  --color-stroke: rgb(var(--color-primary) / 50%);
+  --color-stroke: rgb(var(--color-base), 50%);
 
-  --color-surface: rgb(var(--color-primary) / 5%);
-  --color-surface-hover: rgb(var(--color-primary) / 2%);
+  --color-surface: rgb(var(--color-base), 5%);
+  --color-surface-hover: rgb(var(--color-base), 2%);
 
-  --color-highlight: rgb(var(--color-primary) / 10%);
+  --color-highlight: rgb(var(--color-base), 10%);
 }
 
 @media (prefers-color-scheme: dark) {
   /* :root {
+    --color-base: 255, 255, 255;
     --color-primary: #fff;
 
-    --color-stroke: rgb(var(--color-primary) / 50%);
+    --color-stroke: rgb(var(--color-base) / 50%);
 
-    --color-surface: rgb(var(--color-primary) / 10%);
-    --color-surface-hover: rgb(var(--color-primary) / 5%);
+    --color-surface: rgb(var(--color-base) / 10%);
+    --color-surface-hover: rgb(var(--color-base) / 5%);
 
-    --color-highlight: rgb(var(--color-primary) / 20%);
+    --color-highlight: rgb(var(--color-base) / 20%);
   } */
 }
 
@@ -50,5 +52,6 @@ body {
   font-family: var(--font-inter);
   font-optical-sizing: auto;
   font-style: normal;
-  background-color: var(--color-surface);
+  width: 100dvw;
+  height: 100dvh;
 }
