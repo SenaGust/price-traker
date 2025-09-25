@@ -52,9 +52,4 @@
 
 body {
   font-size: 16px;
-  font-family: var(--font-inter);
-  font-optical-sizing: auto;
-  font-style: normal;
-  width: 100dvw;
-  height: 100dvh;
 }

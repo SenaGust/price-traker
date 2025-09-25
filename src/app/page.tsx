@@ -8,7 +8,9 @@ import { twMerge } from "tailwind-merge";
 export default async function Home() {
   return (
     <div
-      className={twMerge("flex flex-col w-147 mx-auto my-2 h-fit items-center")}
+      className={twMerge(
+        "flex flex-col max-w-147 mx-auto my-2 h-fit items-center"
+      )}
     >
       <header className="flex flex-col py-6 items-center gap-2 w-fit">
         <Avatar />

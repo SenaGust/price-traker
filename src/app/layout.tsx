@@ -28,8 +28,9 @@ export default function RootLayout({
       <body
         className={twMerge(
           `${geistSans.variable} ${geistMono.variable} antialiased`,
-          "bg-[url(/light-bg-mobile.png)] lg:bg-[url(/light-bg-desktop.png)] bg-cover bg-center",
-          "dark:bg-[url(/dark-bg-mobile.png)] dark:lg:bg-[url(/dark-bg-desktop.png)] bg-cover bg-center"
+          "h-dvh w-dvw",
+          "bg-[url(/light-bg-mobile.png)] lg:bg-[url(/light-bg-desktop.png)] bg-cover bg-center bg-no-repeat",
+          "dark:bg-[url(/dark-bg-mobile.png)] dark:lg:bg-[url(/dark-bg-desktop.png)]"
         )}
       >
         {children}

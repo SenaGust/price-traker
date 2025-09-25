@@ -1,5 +1,4 @@
 "use client";
-
 import { MoonIcon, SunIcon } from "@phosphor-icons/react";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
@@ -9,8 +8,16 @@ export function Switch() {
 
   return (
     <div
-      className="group flex items-center justify-center w-16 h-8 cursor-pointer"
+      className="group flex items-center justify-center w-16 h-8 cursor-pointer focus-visible:outline-none"
       onClick={() => setIsActive((prev) => !prev)}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          setIsActive((prev) => !prev);
+        }
+      }}
+      tabIndex={0}
+      role="switch"
+      aria-checked={isActive}
     >
       {/* Background */}
       <div
@@ -33,8 +40,10 @@ export function Switch() {
 
       {/* Handle */}
       <div
+        aria-hidden={true}
         className={twMerge(
           "absolute",
+          "group-active:scale-95 group-focus-visible:outline-2",
           "transition-all duration-300",
           isActive ? "translate-x-1/2" : "-translate-x-1/2",
           "flex size-8 rounded-full items-center justify-center",
