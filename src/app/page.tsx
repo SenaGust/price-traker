@@ -2,6 +2,7 @@ import { Avatar } from "@/components/common/avatar/avatar";
 import { Button } from "@/components/common/button";
 import { SocialLink } from "@/components/common/social-link";
 import { SocialLinkEnum } from "@/components/common/social-link/types";
+import { Switch } from "@/components/common/switch/switch";
 
 export default async function Home() {
   return (
@@ -11,6 +12,8 @@ export default async function Home() {
       <SocialLink socialLink={SocialLinkEnum.Whatsapp} />
 
       <Avatar />
+
+      <Switch />
     </div>
   );
 }
