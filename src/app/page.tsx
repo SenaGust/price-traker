@@ -1,8 +1,7 @@
-import { Avatar } from "@/components/common/avatar/avatar";
+import { Avatar } from "@/components/common/avatar";
 import { Button } from "@/components/common/button";
-import { SocialLink } from "@/components/common/social-link";
-import { SocialLinkEnum } from "@/components/common/social-link/types";
-import { Switch } from "@/components/common/switch/switch";
+import { SocialLink, SocialLinkEnum } from "@/components/common/social-link";
+import { Switch } from "@/components/common/switch";
 import { twMerge } from "tailwind-merge";
 
 export default async function Home() {
