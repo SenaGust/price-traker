@@ -38,7 +38,7 @@ export function Switch() {
           "transition-all duration-300",
           isActive ? "translate-x-1/2" : "-translate-x-1/2",
           "flex size-8 rounded-full items-center justify-center",
-          "bg-inverted-primary color-primary",
+          "bg-inverted-primary text-primary",
           "shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]"
         )}
       >

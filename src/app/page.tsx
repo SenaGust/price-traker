@@ -18,12 +18,12 @@ export default async function Home() {
         <Switch />
       </section>
 
-      <main className="flex p-6 flex-col gap-4 w-full">
+      <section className="flex p-6 flex-col gap-4 w-full">
         <Button>Inscreva-se no NLW</Button>
         <Button>Baixe meu e-book</Button>
         <Button>Veja meu portfólio</Button>
         <Button>Conheça meu curso</Button>
-      </main>
+      </section>
 
       <section className="flex p-6 gap-4 flex-row items-center">
         <SocialLink socialLink={SocialLinkEnum.GitHub} />

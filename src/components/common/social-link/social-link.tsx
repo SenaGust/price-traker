@@ -12,7 +12,7 @@ export function SocialLink({ socialLink, ...props }: SocialLinkProps) {
     <button
       className={twMerge(
         "size-10 p-2 rounded-full",
-        "flex justify-center items-center",
+        "flex justify-center items-center text-primary",
         "[&>svg]:size-6 [&>svg]:shrink-0",
         "hover:bg-highlight active:bg-highlight",
         "cursor-pointer",

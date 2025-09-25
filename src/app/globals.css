@@ -19,12 +19,12 @@
     --color-primary: #fff;
     --color-inverted-primary: #000;
 
-    --color-stroke: rgb(var(--color-base) / 50%);
+    --color-stroke: rgb(var(--color-base), 50%);
 
-    --color-surface: rgb(var(--color-base) / 10%);
-    --color-surface-hover: rgb(var(--color-base) / 5%);
+    --color-surface: rgb(var(--color-base), 10%);
+    --color-surface-hover: rgb(var(--color-base), 5%);
 
-    --color-highlight: rgb(var(--color-base) / 20%);
+    --color-highlight: rgb(var(--color-base), 20%);
   }
 }
 
