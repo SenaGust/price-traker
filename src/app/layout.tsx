@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Inter_Tight } from "next/font/google";
 import "./globals.css";
+import { twMerge } from "tailwind-merge";
 
 const geistSans = Inter({
   variable: "--font-geist-sans",
@@ -25,7 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={twMerge(
+          `${geistSans.variable} ${geistMono.variable} antialiased`,
+          "bg-[url(/light-bg-mobile.png)] lg:bg-[url(/light-bg-desktop.png)] bg-cover bg-center",
+          "dark:bg-[url(/dark-bg-mobile.png)] dark:lg:bg-[url(/dark-bg-desktop.png)] bg-cover bg-center"
+        )}
       >
         {children}
       </body>

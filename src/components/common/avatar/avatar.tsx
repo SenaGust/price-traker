@@ -5,11 +5,11 @@ export function Avatar() {
     <Image
       src="/avatar.png"
       alt="avatar"
-      width={400}
-      height={400}
+      width={112}
+      height={112}
       quality={100}
       priority
-      className="size-100 object-cover rounded-full border-solid border-stroke border-2"
+      className="size-28 object-cover rounded-full border-solid border-stroke border-2"
     />
   );
 }
