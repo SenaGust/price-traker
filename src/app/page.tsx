@@ -10,7 +10,7 @@ export default async function Home() {
   const t = await getTranslations();
 
   return (
-    <div
+    <main
       className={twMerge(
         "flex flex-col max-w-147 mx-auto my-2 h-fit items-center"
       )}
@@ -50,7 +50,7 @@ export default async function Home() {
         />
       </section>
 
-      <footer className="text-sm text-primary p-6">
+      <footer role="contentinfo" className="text-sm text-primary p-6">
         {t.rich("footer.madeWithLove", {
           link: (chunks) => (
             <Link
@@ -63,6 +63,6 @@ export default async function Home() {
           ),
         })}
       </footer>
-    </div>
+    </main>
   );
 }
