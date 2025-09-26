@@ -8,12 +8,18 @@ importers:
 
   .:
     dependencies:
+      '@formatjs/intl-localematcher':
+        specifier: ^0.6.1
+        version: 0.6.1
       '@phosphor-icons/react':
         specifier: ^2.1.10
         version: 2.1.10(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       ionicons:
         specifier: ^8.0.13
         version: 8.0.13
+      negotiator:
+        specifier: ^1.0.0
+        version: 1.0.0
       next:
         specifier: 15.2.2
         version: 15.2.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -36,6 +42,9 @@ importers:
       '@tailwindcss/postcss':
         specifier: ^4.1.13
         version: 4.1.13
+      '@types/negotiator':
+        specifier: ^0.6.4
+        version: 0.6.4
       '@types/node':
         specifier: ^20
         version: 20.17.24
@@ -501,6 +510,9 @@ packages:
 
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+
+  '@types/negotiator@0.6.4':
+    resolution: {integrity: sha512-elf6BsTq+AkyNsb2h5cGNst2Mc7dPliVoAPm1fXglC/BM3f2pFA40BaSSv3E5lyHteEawVKLP+8TwiY1DMNb3A==}
 
   '@types/node@20.17.24':
     resolution: {integrity: sha512-d7fGCyB96w9BnWQrOsJtpyiSaBcAYYr75bnK6ZRjDbql2cGLj/3GsL5OYmLPNq76l7Gf2q4Rv9J2o6h5CrD9sA==}
@@ -2141,6 +2153,8 @@ snapshots:
   '@types/json-schema@7.0.15': {}
 
   '@types/json5@0.0.29': {}
+
+  '@types/negotiator@0.6.4': {}
 
   '@types/node@20.17.24':
     dependencies:
