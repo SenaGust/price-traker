@@ -1,7 +1,6 @@
 import { Avatar } from "@/components/common/avatar";
 import { Button } from "@/components/common/button";
 import { SocialLink, SocialLinkEnum } from "@/components/common/social-link";
-import { Switch } from "@/components/common/switch";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
